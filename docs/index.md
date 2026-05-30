@@ -4,17 +4,19 @@ pageType: home
 hero:
   name: 星程课表
   text: AstraSchedule
-  tagline: 自动调休 · 兼容 Windows 7
+  tagline: 支持集控 · 自动调休 · 兼容 Windows 7
+  image:
+    src: https://image-hk-1.oss-accelerate.aliyuncs.com/icon.png
   actions:
     - theme: brand
-      text: 快速开始
+      text: 开始部署
       link: /guide/
     - theme: alt
-      text: 技术文档
-      link: /dev/
+      text: 使用手册
+      link: /manual/
     - theme: alt
       text: GitHub
-      link: https://github.com/daizihan233/AstraSchedule
+      link: https://github.com/AstraSchedule/desktop
 
 features:
   - title: 集控管理
@@ -45,4 +47,3 @@ features:
     details: 可以把整个数据库备份下来，也能在 MySQL 和 SQLite 之间迁移。新建班级时直接复制别的班级的配置，省事。
     icon: 💾
 ---
-
