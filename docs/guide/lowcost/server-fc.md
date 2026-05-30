@@ -73,6 +73,8 @@ serverless = true
 
 > 💡 使用 SQLite 无需额外配置数据库。数据存储在函数计算实例的 `/tmp` 目录中。注意：SQLite 数据在实例回收后可能丢失，建议定期备份。
 
+> 📝 **天气 API 配置**：`[apikey]` 部分用于配置和风天气 API。如果需要启用天气功能，请参考 [获取和风天气 API 凭证](./weather-api.md) 获取 APIKey 或 JWT Token。
+
 ### 5. 配置启动命令
 
 在函数配置中设置：
