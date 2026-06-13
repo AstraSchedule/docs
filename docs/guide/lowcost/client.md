@@ -15,11 +15,13 @@
 
 ### 1. 下载客户端
 
-1. 打开 [GitHub Releases 页面](https://github.com/daizihan233/ElectronClassSchedule/releases/latest)
+1. 打开 [GitHub Releases 页面](https://github.com/AstraSchedule/desktop/releases/latest)
 2. 找到最新的发布版本，下载 `ElectronClassSchedule-Setup-YYYYMM.D.N.exe` 安装包
 3. 下载完成后，双击安装包进行安装
 
 安装过程与普通 Windows 软件相同，一路下一步即可完成安装。安装完成后，桌面和开始菜单都会有快捷方式。
+
+![GitHub Release 页截图](https://image-hk-1.oss-accelerate.aliyuncs.com/image-20260613001351709.png)
 
 ### 2. 配置云端服务地址
 

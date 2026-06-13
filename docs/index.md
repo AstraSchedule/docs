@@ -4,7 +4,7 @@ pageType: home
 hero:
   name: 星程课表
   text: AstraSchedule
-  tagline: 支持集控 · 自动调休 · 兼容 Windows 7
+  tagline: 灵活部署 · 智能调休 · 集中管控 · 兼容 Windows 7
   image:
     src: https://image-hk-1.oss-accelerate.aliyuncs.com/icon.png
   actions:
@@ -19,31 +19,31 @@ hero:
       link: https://github.com/AstraSchedule/desktop
 
 features:
-  - title: 集控管理
-    details: 在网页端统一设置所有班级的课表、作息、科目，客户端开机自动同步。不用一个班一个班去改。
-    icon: 🔗
-  - title: 配置同步
-    details: 如果用自己服务器，改完配置后客户端秒级更新；如果用免费 Serverless 模式，客户端定期自动拉取，不用管。
-    icon: 🔄
-  - title: 智能调休与临时调课
-    details: 自动同步官方调休数据，无需手动填；临时调课设好日期范围，到期自动复原。
-    icon: ↔️
-  - title: 天气联动
-    details: 显示实时气温和天气，温度不同颜色不一样；遇到极端天气，顶部会自动弹出预警横幅。
-    icon: 🌤️
-  - title: 跑马灯横幅
-    details: 顶部滚动通知，考试期间可以一键改成“诚信考试”等提示；天气预警来了会自动替换掉普通通知。
-    icon: 📋
-  - title: 倒数日
-    details: 独立小窗口显示距离考试、放假还剩几天，天数越近颜色越红，多个日程按优先级排列。
-    icon: 📆
   - title: 灵活部署
-    details: 后端可以用 SQLite（不用装数据库，开箱即用）或者 MySQL。能跑在云函数等免费 Serverless 平台上。客户端、网页、后端可以分开放在不同地方。
+    details: SQLite 开箱即用，也支持 MySQL。能跑在云函数等 Serverless 平台上轮询，也能够跑在服务器上 WebSocket 实时推送。客户端、管理端、后端可以分开放在不同地方。
     icon: 📦
-  - title: 高性能后端
-    details: 用 Go + Gin 写的，并发能力强。配合 Serverless 可以自动扩容，早上上课前全班一起拉课表也不会卡。
-    icon: ⚡
-  - title: 一键备份与复制
-    details: 可以把整个数据库备份下来，也能在 MySQL 和 SQLite 之间迁移。新建班级时直接复制别的班级的配置，省事。
+  - title: 智能调休与自动任务
+    details: 内置中国节假日调休推算，自动应用调课安排；临时调课设好日期范围，到期自动复原。一条规则搞定整个年级的临时调整，不用逐班修改。
+    icon: 🔄
+  - title: 集中管控
+    details: 网页端统一配置所有班级的课表、作息、科目，客户端开机自动同步。新建班级时一键复制已有配置，全班共用一套规则。
+    icon: 🔗
+  - title: 悬浮课表
+    details: 课表以透明悬浮窗显示在屏幕顶部，不遮挡任何内容。鼠标移到课表上会自动变透明，方便老师临时查看被遮挡的课件。
+    icon: 👁️
+  - title: 兼容 Windows 7
+    details: 专门适配 32 位 Windows 7 系统。学校机房的老旧设备也能流畅运行，不需要升级操作系统。
+    icon: 🖥️
+  - title: 倒数日
+    details: 独立小窗口显示中考、期末考、放假倒计时。天数越近颜色越红，中文竖排显示，多个日程按优先级排列。
+    icon: 📆
+  - title: 实时天气
+    details: 课表旁边显示当前气温和天气，温度不同颜色不同，极端天气自动弹出预警。
+    icon: 🌤️
+  - title: 通知横幅
+    details: 顶部滚动通知栏，考试期间放"诚信考试"，放假前放安全提示。天气预警来了自动替换普通通知。
+    icon: 📢
+  - title: 一键备份与迁移
+    details: 整个数据库一键导出为 JSON，换个服务器直接导入。支持 MySQL 和 SQLite 互相迁移，不怕换环境。
     icon: 💾
 ---
