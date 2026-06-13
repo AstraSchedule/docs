@@ -2,6 +2,7 @@ import * as path from 'node:path';
 import { defineConfig } from '@rspress/core';
 import mermaid from 'rspress-plugin-mermaid';
 import { pluginGiscus } from 'rspress-plugin-giscus';
+import { pluginSitemap } from '@rspress/plugin-sitemap';
 
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
@@ -26,6 +27,9 @@ export default defineConfig({
       repoId: 'R_kgDOLu9Xeg',
       category: 'Giscus',
       categoryId: 'DIC_kwDOLu9Xes4C-nET',
+    }),
+    pluginSitemap({
+      hostname: 'https://astra.khbit.cn',
     }),
   ]
 });
