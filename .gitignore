@@ -3,6 +3,11 @@
 *.local
 *.log*
 
+# Other lockfiles (project uses bun)
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
 # Dist
 node_modules
 dist/
