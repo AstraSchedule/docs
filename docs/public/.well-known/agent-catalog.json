@@ -1,0 +1,14 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "AstraSchedule Agent Catalog",
+    "version": "1.0.0",
+    "description": "AstraSchedule - intelligent class schedule management system for schools."
+  },
+  "servers": [
+    {
+      "url": "https://getastra.cn"
+    }
+  ],
+  "paths": {}
+}

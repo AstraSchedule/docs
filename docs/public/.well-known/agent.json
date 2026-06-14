@@ -1,0 +1,29 @@
+{
+  "name": "AstraSchedule",
+  "description": "AstraSchedule is an intelligent class schedule management system. It provides automated timetable generation, schedule conflict resolution, and real-time schedule viewing for schools and educational institutions.",
+  "url": "https://getastra.cn",
+  "version": "1.0.0",
+  "documentationUrl": "https://getastra.cn",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "authentication": {
+    "schemes": []
+  },
+  "defaultInputModes": ["text"],
+  "defaultOutputModes": ["text"],
+  "skills": [
+    {
+      "id": "schedule-management",
+      "name": "Schedule Management",
+      "description": "View and manage class schedules, timetables, and scheduling configurations.",
+      "tags": ["schedule", "timetable", "education"],
+      "examples": [
+        "Show me the class schedule for this week",
+        "How do I configure the timetable?"
+      ]
+    }
+  ]
+}
