@@ -30,7 +30,7 @@ Netlify 的部署步骤与极低成本方案完全一致。
 
 ```shell
 cd NaiveClassSchedule
-npm run build
+bun run build
 ```
 
 构建产物在 `dist/` 目录下。

@@ -60,7 +60,7 @@ AstraSchedule 提供完整的数据库备份和配置复制功能，帮助管理
 
 ## 手动备份 SQLite
 
-对于使用 SQLite 数据库的部署场景（包括传统部署和 Serverless 部署中的 SQLite 模式），可以进行文件级的手动备份。SQLite 数据库为单个 `.db` 文件（默认路径由 `config.toml` 中的 `db.sqlite.path` 指定），直接复制该文件即可完成备份：
+对于使用 SQLite 数据库的部署场景（包括传统部署和 Serverless 部署中的 SQLite 模式），可以进行文件级的手动备份。SQLite 数据库为单个 `.db` 文件（默认路径由 `config.toml` 中的 `db.path` 指定），直接复制该文件即可完成备份：
 
 ```shell
 # 传统部署示例

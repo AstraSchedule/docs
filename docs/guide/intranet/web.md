@@ -28,8 +28,8 @@ sudo yum install git -y    # CentOS/RHEL
 
 # 克隆仓库
 cd /opt
-sudo git clone https://github.com/daizihan233/AstraScheduleWeb.git
-cd AstraScheduleWeb
+sudo git clone https://github.com/AstraSchedule/admin.git
+cd NaiveClassSchedule
 ```
 
 ### 2. 修改 API 地址配置
@@ -57,11 +57,11 @@ export const APISRV = "http://192.168.1.100:9000"
 ### 3. 安装依赖并构建
 
 ```bash
-# 安装项目依赖
-sudo npm install
+# 安装项目依赖（需要先安装 Bun：https://bun.sh）
+sudo bun install
 
 # 构建生产版本
-sudo npm run build
+sudo bun run build
 ```
 
 构建完成后，产物在 `dist/` 目录中。这是可以直接被 Nginx 托管的静态文件。
@@ -94,7 +94,7 @@ server {
     server_name _;   # 匹配所有访问，也可改为服务器的内网 IP
 
     # 管理端静态文件
-    root /opt/AstraScheduleWeb/dist;
+    root /opt/NaiveClassSchedule/dist;
     index index.html;
 
     # 日志文件
@@ -255,7 +255,7 @@ location / {
 
 ```bash
 # 增加 Node.js 内存限制
-NODE_OPTIONS="--max-old-space-size=2048" npm run build
+NODE_OPTIONS="--max-old-space-size=2048" bun run build
 ```
 
 或者在本地开发电脑上好构建后，只上传 `dist/` 目录到服务器。
