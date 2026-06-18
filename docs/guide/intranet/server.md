@@ -17,14 +17,14 @@
 
 ### 1. 下载后端二进制文件
 
-1. 打开 [AstraScheduleServerGo Releases 页面](https://github.com/daizihan233/AstraScheduleServerGo/releases/latest)
+1. 打开 [AstraScheduleServerGo Releases 页面](https://github.com/AstraSchedule/backend/releases/latest)
 2. 找到最新的发布版本，下载对应架构的二进制文件：
    - AMD64（绝大多数服务器）：`AstraScheduleServerGo-linux-amd64`
    - ARM64（树莓派等）：`AstraScheduleServerGo-linux-arm64`
 3. 将文件上传到服务器，或直接在服务器上通过 `wget` 下载：
 
 ```bash
-wget https://github.com/daizihan233/AstraScheduleServerGo/releases/latest/download/AstraScheduleServerGo-linux-amd64 -O astrago
+wget https://github.com/AstraSchedule/backend/releases/latest/download/AstraScheduleServerGo-linux-amd64 -O astrago
 ```
 
 ### 2. 放置文件并设置权限
@@ -48,7 +48,7 @@ sudo chmod +x /opt/astraschedule/astrago
 
 ```bash
 cd /opt/astraschedule
-sudo wget https://raw.githubusercontent.com/daizihan233/AstraScheduleServerGo/main/config.example.toml -O config.toml
+sudo wget https://raw.githubusercontent.com/AstraSchedule/backend/main/config.template.toml -O config.toml
 ```
 
 编辑配置文件 `config.toml`，根据实际环境修改以下内容：
@@ -227,7 +227,7 @@ sudo systemctl stop astraschedule
 sudo cp /opt/astraschedule/astrago /opt/astraschedule/astrago.bak
 
 # 下载新版本
-sudo wget https://github.com/daizihan233/AstraScheduleServerGo/releases/latest/download/AstraScheduleServerGo-linux-amd64 -O /opt/astraschedule/astrago
+sudo wget https://github.com/AstraSchedule/backend/releases/latest/download/AstraScheduleServerGo-linux-amd64 -O /opt/astraschedule/astrago
 
 # 恢复执行权限
 sudo chmod +x /opt/astraschedule/astrago

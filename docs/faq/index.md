@@ -3,7 +3,7 @@
 
 # 常见问题
 
-本页面汇总了 AstraSchedule 使用过程中的常见问题及解决方法。如果你遇到的问题不在本页，欢迎在 [GitHub Issues](https://github.com/daizihan233/AstraSchedule/issues) 提出。
+本页面汇总了 AstraSchedule 使用过程中的常见问题及解决方法。如果你遇到的问题不在本页，欢迎在 [GitHub Issues](https://github.com/AstraSchedule/desktop/issues) 提出。
 
 ## 部署相关
 
@@ -185,7 +185,7 @@ AstraSchedule 窗口设计为半透明悬浮窗，支持以下操作：
 2. **网络不通**：客户端无法访问 GitHub，尝试切换为国内镜像源
 3. **Windows 7 特殊情况**：
    - 安装 [KB2999226](https://www.microsoft.com/zh-cn/download/details.aspx?id=49093) 和 [KB2533623](https://www.microsoft.com/zh-cn/download/details.aspx?id=26767) 补丁
-   - 或手动下载安装包覆盖安装（[Releases 页面](https://github.com/daizihan233/AstraSchedule/releases/latest) 下载 `.exe` 安装包）
+   - 或手动下载安装包覆盖安装（[Releases 页面](https://github.com/AstraSchedule/desktop/releases/latest) 下载 `.exe` 安装包）
 
 ### Q17：课表上科目名称显示不对？
 
